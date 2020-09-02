@@ -39,13 +39,7 @@
 			Scanner input = new Scanner(System.in);
 			userDecision = input.nextLine();		//user input
 			
-			System.out.println("1. Show all cameras");
-			System.out.println("2. Add a camera");
-			System.out.println("3. Find a camera");
-			System.out.println("4. Show all cameras");
-			System.out.println("5. Delete a camera");
-			System.out.println("6. Exit");
-			System.out.println("Enter your selection: ");
+
 			
 			//add conditional statements here - probably a switch
 			
@@ -55,6 +49,15 @@
 			case 1: for (int i = 0; i <= cameraArray.size()-1; i++) {
 					System.out.println(cameraArray.get(i));
 					}
+			System.out.println();
+			System.out.println("1. Show all cameras");
+			System.out.println("2. Add a camera");
+			System.out.println("3. Find a camera");
+			System.out.println("4. Show all cameras");
+			System.out.println("5. Delete a camera");
+			System.out.println("6. Exit");
+			System.out.println("Enter your selection: ");
+			
 					break;
 					
 					
@@ -68,6 +71,17 @@
 					int weightInt = Integer.parseInt(weight);
 					Cameras myCamera5 = new Cameras(make, mPixelsInt, weightInt);
 					cameraArray.add(myCamera5);
+					
+					System.out.println();
+					System.out.println("1. Show all cameras");
+					System.out.println("2. Add a camera");
+					System.out.println("3. Find a camera");
+					System.out.println("4. Show all cameras");
+					System.out.println("5. Delete a camera");
+					System.out.println("6. Exit");
+					System.out.println("Enter your selection: ");
+
+					
 					break;
 					
 				
