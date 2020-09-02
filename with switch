@@ -1,0 +1,80 @@
+	public static void main(String[] args) {
+		
+//			Cameras[] cameras = new Cameras[4];
+//			cameras[0] = new Cameras("Canon", 12, 4);
+//			cameras[1] = new Cameras("Nikon", 12, 2);			
+//			cameras[2] = new Cameras("Sony", 20, 3);
+//			cameras[3] = new Cameras("Fuji", 22, 4);			
+			
+			ArrayList<Cameras> cameraArray = new ArrayList<Cameras>();	//create arraylist of type cameras
+			
+			//create 4 instances of cameras to hardcode into ArrayList
+			Cameras myCamera1 = new Cameras("Canon", 18, 4);
+			Cameras myCamera2 = new Cameras("Nikon", 12, 2);
+			Cameras myCamera3 = new Cameras("Sony", 20, 3);
+			Cameras myCamera4 = new Cameras("Fuji", 22, 4);
+			
+			//put cameras into arraylist
+			cameraArray.add(myCamera1);
+			cameraArray.add(myCamera2);
+			cameraArray.add(myCamera3);
+			cameraArray.add(myCamera4);
+			
+			
+			System.out.println(cameraArray.size());
+
+			
+			String userDecision;
+			System.out.println("1. Show all cameras");
+			System.out.println("2. Add a camera");
+			System.out.println("3. Find a camera");
+			System.out.println("4. Show all cameras");
+			System.out.println("5. Delete a camera");
+			System.out.println("6. Exit");
+			System.out.println("Enter your selection: ");
+			
+			do {
+			//create instance of scanner
+			Scanner input = new Scanner(System.in);
+			userDecision = input.nextLine();		//user input
+			
+			//add conditional statements here - probably a switch
+			
+			
+			int userDecisionStr = Integer.parseInt(userDecision);
+			
+			switch (userDecisionStr) {
+			case 1: for (int i = 0; i <= cameraArray.size()-1; i++) {
+					System.out.println(cameraArray.get(i));
+					}
+					break;
+			case 2: 
+				
+			case 3: System.out.println("ID: ");
+					String idInput = input.nextLine();
+					
+					int i =0;
+					while (i <= cameraArray.size()) {
+						Cameras systemID = cameraArray.get(i);
+						systemID = 
+						if (idInput = cameraArray.get(i));
+						System.out.println(cameras[i]);
+						
+					}
+				
+			case 4: System.out.println("ID to Remove: ");
+					String removeInput = input.nextLine();
+					cameraArray.remove(removeInput);
+					break;
+					
+			case 5: System.out.println("Number of cameras: " + cameraArray.size());
+			
+				
+			}
+			
+			
+			}while(!userDecision.equals("6")); 		
+			
+		
+		}
+	}
