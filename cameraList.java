@@ -76,8 +76,8 @@ public class cameraList {
 					for(Camera camera : cameraArray) {
 						if(camera.getId() == idInput) {
 							System.out.println(camera);
-							break;
-						}else {
+							break;					//added a break here so the loop would stop after the If statement was true.
+						}else {						//Invalid ID now appears properly.
 							noID = false;
 						}
 					}
@@ -96,8 +96,8 @@ public class cameraList {
 							 noID2 = false;
 							if(cameraArray.get(i).getId() == idInput) {
 								System.out.println(cameraArray.get(i) + " has been deleted");
-								cameraArray.remove(i);
-								break;
+								cameraArray.remove(i);            //moved .remove() after the print statement. Otherwise, the list re-indexed
+								break;				  //and printed the incorrect camera as being removed. Invalid ID is also fixed here. 
 							}else {
 								noID2 = true;
 							}
